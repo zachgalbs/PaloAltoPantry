@@ -14,11 +14,12 @@
 
 <div class="grid grid-cols-5 bg-neutral-700 h-14 pl-40 pr-40 text-white font-thin">
     
-    <a class="m-4 text-center" href="index.html">home</a>
-    <a class="m-4 text-center" href="donate.html">donate</a>
-    <a class="m-4 text-center" href="aboutus.html">about us</a>
-    <a class="m-4 text-center" href="getinvolved.html">get involved</a>
-    <a class="m-4 text-center ml-10" href="contact.html">contact us</a>
+
+    <a class="m-4 text-center hover:animate-pulse" href="index.html">home</a>
+    <a class="m-4 text-center hover:animate-pulse" href="donate.html">donate</a>
+    <a class="m-4 text-center hover:animate-pulse" href="aboutus.html">about us</a>
+    <a class="m-4 text-center hover:animate-pulse" href="getinvolved.html">get involved</a>
+    <a class="m-4 text-center ml-10 hover:animate-pulse pointer-events-auto" href="contact.html">contact us</a>
 
 </div>
 
@@ -27,9 +28,11 @@
 </div>
 
 <div class="flex justify-center mt-20">
-    <a href="https://buy.stripe.com/test_cN215O91IbqZ6as7ss">
-        <button class="w-80 h-10 border bg-black text-white rounded-xl shadow-lg">Donate Now</button>
-    </a>
+    <div class="shadow-2xl shadow-black rounded-lg hover:opacity-70 active:opacity-40">
+        <a href="https://buy.stripe.com/test_cN215O91IbqZ6as7ss" class="flex bg-black text-white w-80 h-12 justify-center items-center rounded-lg shadow-2xl">
+            Donate Now
+        </a>
+    </div>
 </div>
 
 <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
