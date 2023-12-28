@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montsererat', sans-serif;
 }
 #ourTeam {
     grid-column-start: 1;

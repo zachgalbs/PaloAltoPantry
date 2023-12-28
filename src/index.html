@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palo Alto Pantry</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body class="bg-gray-100">
 
@@ -12,19 +13,49 @@
     <img src="images/paloaltopantrylogo.png" class="w-14 pb-5">
 </button>
 
-<div class="grid grid-cols-5 bg-neutral-700 h-14 pl-40 pr-40 text-white font-thin">
+<div class="grid grid-cols-2 bg-neutral-700 h-14 pl-40 pr-40 text-white font-thin">
     
 
     <a class="m-4 text-center hover:animate-pulse" href="index.html">home</a>
-    <a class="m-4 text-center hover:animate-pulse opacity-70" href="donate.html">donate</a>
-    <a class="m-4 text-center hover:animate-pulse opacity-70" href="aboutus.html">about us</a>
     <a class="m-4 text-center hover:animate-pulse opacity-70" href="getinvolved.html">get involved</a>
-    <a class="m-4 text-center hover:animate-pulse opacity-70" href="contact.html">contact us</a>
 
 </div>
 
+<div class="h- bg-gray-800">
+    <div class="flex justify-center">
+        <h1 class="text-7xl mt-20 text-white">Palo Alto Pantry</h1>
+    </div>
+    <div class="flex justify-center mt-2 text-gray-200">
+        <h3 class="text-lg"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
+    </div>
+    <div class="flex justify-center mt-20">
+        <button class="w-60 h-12 bg-white rounded">Tell me more</button>
+    </div>
+</div>
 <div class="flex justify-center">
-    <h1 class="text-5xl mt-20">Palo Alto Pantry</h1>
+    <h1 class="text-5xl mt-20 font-extrabold">About Us</h1>
+</div>
+
+<div class="grid grid-cols-2 grid-rows-3 gap-4 h-96 m-5 mt-10" id="aboutUsContainer">
+    <div class="text-center border-black border-2">
+        <h1 class="text-2xl font-semibold mt-2">Our Mission</h1>
+    </div>
+    <div class="text-center border-black border-2">
+        <h1 class="text-2xl font-semibold mt-2">Our Progress</h1>
+    </div>
+    <div class="text-center border-black border-2" id="ourTeam">
+        <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
+        <div class="grid grid-cols-2 place-items-center mt-20">
+            <div>
+                <img class="rounded-full w-80" src="images/miloSmiling.webp" alt="">
+                <p class="mt-5">Milo Sabina</p>
+            </div>
+            <div>
+                <img class="rounded-full w-80" src="images/oliverLacrosse.webp" alt="">
+                <p class="mt-5">Oliver Chancellor</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
