@@ -8,8 +8,8 @@ let miloButton = document.getElementById("miloButton");
 let oliverButton = document.getElementById("oliverButton");
 
 miloButton.onclick = function() {
-    console.log("miloButton clicked");
+    
 }
 oliverButton.onclick = function() {
-    console.log("oilverButton clicked");
+    
 }
