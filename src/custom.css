@@ -10,8 +10,22 @@ body {
     grid-row-end: 4;
 }
 #aboutUsContainer {
-    height: 100vh;
+    height: 80vh;
 }
 #paloAltoPantryNavText {
     padding-right: 50vw;
+}
+#miloModal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh;
+    /* Hide the modal initially */
+    display: none;
+}
+/* This class will be used when we want to stop the user from being able to scroll */
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
 }

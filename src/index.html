@@ -27,10 +27,10 @@
     </div>
 </div>
 <div class="flex justify-center" id="tellMeMoreTarget">
-    <h1 class="text-5xl mt-20 font-extrabold">About Us</h1>
+    <h1 class="text-5xl mt-16 font-extrabold">About Us</h1>
 </div>
 
-<div class="grid grid-cols-2 grid-rows-3 gap-4 h-96 m-5 mt-10" id="aboutUsContainer">
+<div class="grid grid-cols-2 grid-rows-3 gap-4 m-5 mt-10" id="aboutUsContainer">
     <div class="text-center border-black border-2 bg-slate-500">
         <h1 class="text-2xl font-semibold mt-2">Our Mission</h1>
         <p class="font-light">Random text about the goal of Palo Alto Pantry: <br> "Our mission is to provide more people in need with necessary food." </p>
@@ -41,18 +41,27 @@
     </div>
     <div class="text-center border-black border-2 bg-slate-400" id="ourTeam">
         <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
-        <div class="grid grid-cols-2 place-items-center mt-20">
+        <div class="grid grid-cols-3 place-items-center mt-10">
             <div>
                 <button id="miloButton">
-                    <img class="rounded-full w-80" src="images/miloSmiling.webp" alt="">
+                    <img class="rounded-full w-60" src="images/miloSmiling.webp" alt="">
                     <p class="mt-5">Milo Sabina</p>
                 </button>
                 
             </div>
+            <div id="miloModal" class= "border-black border-8 fixed bg-gray-400 opacity-90">
+                
+            </div>
             <div>
                 <button id="oliverButton">
-                    <img class="rounded-full w-80" src="images/oliverLacrosse.webp" alt="">
+                    <img class="rounded-full w-60" src="images/oliverLacrosse.webp" alt="">
                     <p class="mt-5">Oliver Chancellor</p>
+                </button>
+            </div>
+            <div>
+                <button id="christianButton">
+                    <img class="rounded-full w-60" src="images/christianLacrosse.webp" alt="">
+                    <p class="mt-5">Christian Saleh</p>
                 </button>
             </div>
         </div>
