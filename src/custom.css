@@ -47,3 +47,11 @@ body {
 #title{
     transition: all 0.3s ease;
 }
+
+#home{
+    transition: all 0.3s ease;
+}
+
+#donate{
+    transition: all 0.3s ease;
+}

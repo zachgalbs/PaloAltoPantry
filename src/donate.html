@@ -16,34 +16,35 @@
 
     <h1 id="title" class="text-3xl overflow-hidden ml-10 w-screen font-bold" id="paloAltoPantryNavText">Palo Alto Pantry</h1>
    
-    <a class="text-center text-xl opacity-70 hover:animate-pulse pr-6" href="index.html">home</a>
+
+
+    <a id="home" class="text-center text-xl opacity-70 hover:animate-pulse pr-6" href="index.html">home</a>
    
-    <a class="text-center text-xl" href="donate.html">donate</a>
+    <a id="donate" class="text-center text-xl" href="donate.html">donate</a>
+    
 
 </div>
+
+<p class="text-lg"></p>
 
 <p class="text-2xl"></p>
 
 <div class="bg-gray-800 h-screen">
 
-<div class="flex justify-center">
-    <h1 class="text-5xl mt-20 text-white">Get Involved</h1>
-</div>
+    <div class="flex justify-center">
+        <h1 class="text-5xl mt-40 text-white">Get Involved</h1>
+    </div>
 
-<div class="flex justify-center mt-5 text-white font-bold">
-    <p>Lorem ipsum dolor sit amet.</p>
-</div>
+    <div class="flex justify-center mt-5 text-white font-bold">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-<div class="flex justify-center mt-5 h-20 italic">
+    <div class="flex justify-center mt-5 h-20 italic">
+        <p class="w-96 text-white text-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates saepe sint pariatur culpa dolorem in quisquam odio praesentium quibusdam, vero dicta nobis rerum blanditiis fugit unde minus numquam voluptate architecto animi? Fuga doloremque officia non quos rem officiis molestiae?
+        </p>    
 
-    <p class="w-96 text-white text-justify">
-        
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates saepe sint pariatur culpa dolorem in quisquam odio praesentium quibusdam, vero dicta nobis rerum blanditiis fugit unde minus numquam voluptate architecto animi? Fuga doloremque officia non quos rem officiis molestiae?
-
-    </p>    
-
-
-</div>
+    </div>
 
 </div>
 
@@ -120,13 +121,19 @@
 window.addEventListener('scroll', function(){
     
     if (window.scrollY > 0) {
-    navbar.style.height = '5%';
-    title.style.fontSize = '24px';
+        navbar.style.height = '5%';
+        title.style.fontSize = '24px';
+        home.style.fontSize = '18px';
+        donate.style.fontSize = '18px';
+
 }
 
     else {
         navbar.style.height = '7%';
         title.style.fontSize = '30px';
+        home.style.fontSize = '20px';
+        donate.style.fontSize = '20px';
+
     }
 
 

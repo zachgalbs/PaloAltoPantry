@@ -604,6 +604,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -666,6 +670,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
 }
 
 .justify-end {
@@ -776,6 +784,10 @@ video {
   text-align: justify;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -804,6 +816,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
