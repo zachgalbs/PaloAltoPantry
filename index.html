@@ -7,18 +7,6 @@
         <link rel="stylesheet" href="/dist/output.css">
         <link rel="stylesheet" href="/node_modules/animate.css/animate.css">
         <link rel="stylesheet" href="/src/custom.css">
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              // Check if the URL contains 'github.io' (indicative of GitHub Pages)
-              if (window.location.href.includes('github.io')) {
-                // Adjust the paths for GitHub Pages
-                var basePath = '/PaloAltoPantry';
-                document.querySelector('link[href="/dist/output.css"]').href = basePath + '/dist/output.css';
-                document.querySelector('link[href="/node_modules/animate.css/animate.css"]').href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
-                document.querySelector('link[href="custom.css"]').href = basePath + '/src/custom.css';
-              }
-            });
-        </script>
     </head>    
     <body class="bg-gray-100">
         <div id="mainContent">
