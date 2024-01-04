@@ -27,6 +27,9 @@ body {
 .animateModal {
     animation: modalTransition 1s;
 }
+.animateScroll {
+    animation: fadeInUp 1s;
+}
 /* This class will be used when we want to stop the user from being able to scroll */
 .no-scroll {
     overflow: hidden;
@@ -72,4 +75,13 @@ body {
 
 #donate{
     transition: all 0.3s ease;
+}
+/* page transition */
+html.is-changing .transition-fade {
+    transition: opacity 0.25s;
+    opacity: 1;
+}
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade {
+opacity: 0;
 }

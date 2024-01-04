@@ -1,8 +1,13 @@
 document.getElementById("tellMeMoreButton").addEventListener('click', function() {
-    document.getElementById("tellMeMoreTarget").scrollIntoView({
+    let target = document.getElementById("tellMeMoreTarget");
+    target.scrollIntoView({
         behavior: "smooth"
     });
+
+    // Add animation classes from Animate.css
+    target.classList.add("animateScroll");
 });
+
 
 let miloButton = document.getElementById("miloButton");
 let oliverButton = document.getElementById("oliverButton");
