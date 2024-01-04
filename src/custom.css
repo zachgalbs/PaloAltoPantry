@@ -25,7 +25,7 @@ body {
     display: none;
 }
 .animateModal {
-    animation: backInDown 2s;
+    animation: backInDown 1s;
 }
 /* This class will be used when we want to stop the user from being able to scroll */
 .no-scroll {
