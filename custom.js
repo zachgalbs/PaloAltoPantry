@@ -34,6 +34,6 @@ function toggleModal(modal) {
         modal.style.display = "none";        
         document.body.classList.remove("no-scroll");
         mainContent.classList.remove('dimmed');
-        modal.classList.remove('animate-modal');
+        modal.classList.remove('animateModal');
     }
 }
