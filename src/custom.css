@@ -24,8 +24,17 @@ body {
     /* Hide the modal initially */
     display: none;
 }
+.animateModal {
+    animation: backInDown 2s;
+}
 /* This class will be used when we want to stop the user from being able to scroll */
 .no-scroll {
     overflow: hidden;
     height: 100%;
+}
+#mainContent {
+    background-color: white;
+}
+.dimmed {
+    filter: brightness(70%);
 }
