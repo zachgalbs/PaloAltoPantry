@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palo Alto Pantry</title>
-    <link rel="stylesheet" href="/dist/output.css">
-    <link rel="stylesheet" href="/node_modules/animate.css/animate.css">
-    <link rel="stylesheet" href="custom.css">
-</head>
-<body class="bg-gray-100">
-<div id="mainContent">
-    <div class="flex justify-end bg-neutral-700 h-14 pr-40 text-white font-thin">
-        <h1 class="text-4xl font-bold pt-2" id="paloAltoPantryNavText">Palo Alto Pantry</h1>
-        <a class="mt-3.5 text-center text-xl pr-10" href="index.html">home</a>
-        <a class="mt-3.5 text-center hover:animate-pulse opacity-70 text-xl" href="donate.html">donate</a>
-    </div>
-    
-    <div class="h-screen bg-gray-800">
-        <div class="flex justify-center">
-            <img class="w-80" src="images/paloaltopantrylogo.png" alt="">
-        </div>
-        <div class="flex justify-center mt-2 text-gray-200">
-            <h3 class="text-3xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
-        </div>
-        <div class="flex justify-center mt-20">
-            <button class="w-60 h-12 bg-white rounded" id="tellMeMoreButton">Tell me more</button>
-        </div>
-    </div>
-    <div class="flex justify-center" id="tellMeMoreTarget">
-        <h1 class="text-5xl mt-16 font-extrabold">About Us</h1>
-    </div>
-    
-    <div class="grid grid-cols-2 grid-rows-3 gap-4 m-5 mt-10" id="aboutUsContainer">
-        <div class="text-center border-black border-2 bg-slate-500">
-            <h1 class="text-2xl font-semibold mt-2">Our Mission</h1>
-            <p class="font-light">Random text about the goal of Palo Alto Pantry: <br> "Our mission is to provide more people in need with necessary food." </p>
-        </div>
-        <div class="text-center border-black border-2 bg-slate-500">
-            <h1 class="text-2xl font-semibold mt-2">Our Progress</h1>
-            <p class="font-light">Random text about the progress of Palo Alto Pantry: <br> "Palo Alto Pantry has provided food to over 100 people in need." </p>
-        </div>
-        <div class="text-center border-black border-2 bg-slate-400" id="ourTeam">
-            <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
-            <div class="grid grid-cols-3 place-items-center mt-10">
-                <div>
-                    <button id="miloButton">
-                        <img class="rounded-full w-60" src="images/miloSmiling.webp" alt="">
-                        <p class="mt-5">Milo Sabina</p>
-                    </button>
-                    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palo Alto Pantry</title>
+        <link rel="stylesheet" href="/dist/output.css">
+        <link rel="stylesheet" href="/node_modules/animate.css/animate.css">
+        <link rel="stylesheet" href="custom.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Check if the URL contains 'github.io' (indicative of GitHub Pages)
+              if (window.location.href.includes('github.io')) {
+                // Adjust the paths for GitHub Pages
+                var basePath = '/PaloAltoPantry';
+                document.querySelector('link[href="/dist/output.css"]').href = basePath + '/dist/output.css';
+                document.querySelector('link[href="/node_modules/animate.css/animate.css"]').href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+                document.querySelector('link[href="custom.css"]').href = basePath + '/custom.css';
+              }
+            });
+        </script>
+    </head>    
+    <body class="bg-gray-100">
+        <div id="mainContent">
+            <div class="flex justify-end bg-neutral-700 h-14 pr-40 text-white font-thin">
+                <h1 class="text-4xl font-bold pt-2" id="paloAltoPantryNavText">Palo Alto Pantry</h1>
+                <a class="mt-3.5 text-center text-xl pr-10" href="index.html">home</a>
+                <a class="mt-3.5 text-center hover:animate-pulse opacity-70 text-xl" href="donate.html">donate</a>
+            </div>
+            
+            <div class="h-screen bg-gray-800">
+                <div class="flex justify-center">
+                    <img class="w-80" src="images/paloaltopantrylogo.png" alt="">
                 </div>
-                
-                <div>
-                    <button id="oliverButton">
-                        <img class="rounded-full w-60" src="images/oliverLacrosse.webp" alt="">
-                        <p class="mt-5">Oliver Chancellor</p>
-                    </button>
+                <div class="flex justify-center mt-2 text-gray-200">
+                    <h3 class="text-3xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
                 </div>
-                <div>
-                    <button id="christianButton">
-                        <img class="rounded-full w-60" src="images/christianLacrosse.webp" alt="">
-                        <p class="mt-5">Christian Saleh</p>
-                    </button>
+                <div class="flex justify-center mt-20">
+                    <button class="w-60 h-12 bg-white rounded" id="tellMeMoreButton">Tell me more</button>
                 </div>
             </div>
+            <div class="flex justify-center" id="tellMeMoreTarget">
+                <h1 class="text-5xl mt-16 font-extrabold">About Us</h1>
+            </div>
+            
+            <div class="grid grid-cols-2 grid-rows-3 gap-4 m-5 mt-10" id="aboutUsContainer">
+                <div class="text-center border-black border-2 bg-slate-500">
+                    <h1 class="text-2xl font-semibold mt-2">Our Mission</h1>
+                    <p class="font-light">Random text about the goal of Palo Alto Pantry: <br> "Our mission is to provide more people in need with necessary food." </p>
+                </div>
+                <div class="text-center border-black border-2 bg-slate-500">
+                    <h1 class="text-2xl font-semibold mt-2">Our Progress</h1>
+                    <p class="font-light">Random text about the progress of Palo Alto Pantry: <br> "Palo Alto Pantry has provided food to over 100 people in need." </p>
+                </div>
+                <div class="text-center border-black border-2 bg-slate-400" id="ourTeam">
+                    <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
+                    <div class="grid grid-cols-3 place-items-center mt-10">
+                        <div>
+                            <button id="miloButton">
+                                <img class="rounded-full w-60" src="images/miloSmiling.webp" alt="">
+                                <p class="mt-5">Milo Sabina</p>
+                            </button>
+                            
+                        </div>
+                        
+                        <div>
+                            <button id="oliverButton">
+                                <img class="rounded-full w-60" src="images/oliverLacrosse.webp" alt="">
+                                <p class="mt-5">Oliver Chancellor</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button id="christianButton">
+                                <img class="rounded-full w-60" src="images/christianLacrosse.webp" alt="">
+                                <p class="mt-5">Christian Saleh</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
         </div>
-    </div>
-    <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
-</div>
 
-<div id="miloModal" class= "border-black border-8 fixed bg-white">      
-    
-</div>
+        <div id="miloModal" class= "border-black border-8 fixed bg-white"></div>
 
-<script src="custom.js"></script>
+        <script src="custom.js"></script>
 
-</body> 
-
+    </body> 
 </html>
 
