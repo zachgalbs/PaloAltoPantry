@@ -38,6 +38,20 @@ function toggleModal(modal) {
     }
 }
 
+// adi's code:
+window.addEventListener('scroll', function(){
+    if (window.scrollY > 0) {
+    navbar.style.height = '5%';
+    title.style.fontSize = '24px';
+    }
+
+    else {
+        navbar.style.height = '7%';
+        title.style.fontSize = '30px';
+    }
+
+}); 
+
 
 
 
