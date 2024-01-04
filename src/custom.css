@@ -38,3 +38,12 @@ body {
 .dimmed {
     filter: brightness(70%);
 }
+
+#navbar{
+    height: 6.5%; /* Default height in percentage */
+    transition: all 0.3s ease; /* Smooth transition for size changes */
+}
+
+#title{
+    transition: all 0.3s ease;
+}

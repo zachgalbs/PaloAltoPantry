@@ -37,3 +37,7 @@ function toggleModal(modal) {
         modal.classList.remove('animate-modal');
     }
 }
+
+
+
+
