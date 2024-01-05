@@ -10,13 +10,13 @@
     </head>
     <body class="bg-gray-100">
         <div id="mainContent">
-            <div id="navbar" style="align-items: center;" class="flex w-screen fixed top-0 whitespace-nowrap justify-end bg-neutral-700 h-14 pr-20 text-white font-thin">
+            <div id="navbar" style="align-items: center;" class="navbarElement flex w-screen fixed top-0 whitespace-nowrap justify-end bg-neutral-700 h-16 lg:h-14 pl-5 pr-5 lg:pl-20 lg:pr-20 text-white font-thin">
 
-                <h1 id="title" class="text-3xl overflow-hidden ml-10 w-screen font-bold" id="paloAltoPantryNavText">Palo Alto Pantry</h1>
+                <h1 id="navbarTitle" class="navbarElement text-xl lg:text-3xl overflow-hidden lg:ml-10 w-screen font-bold">Palo Alto Pantry</h1>
                
-                <a class="text-center text-xl pr-6" href="index.html">home</a>
+                <a id="navbarHome" class="navbarElement text-center text-base lg:text-xl pr-6" href="index.html">home</a>
                
-                <a class="text-center text-xl opacity-70 hover:animate-pulse" href="donate.html">donate</a>
+                <a id="navbarDonate" class="navbarElement text-center text-base lg:text-xl opacity-70 hover:animate-pulse" href="donate.html">donate</a>
 
             </div>
             
@@ -37,16 +37,16 @@
                 </div>
             <div class="grid grid-cols-2 grid-rows-3 gap-4 m-5 mt-10" id="aboutUsContainer">
                 <div class="text-center border-black border-2 bg-slate-500">
-                    <h1 class="text-2xl font-semibold mt-2">Our Mission</h1>
+                    <h1 class="text-base lg:text-2xl font-semibold mt-2">Our Mission</h1>
                     <p class="font-light">Random text about the goal of Palo Alto Pantry: <br> "Our mission is to provide more people in need with necessary food." </p>
                 </div>
                 <div class="text-center border-black border-2 bg-slate-500">
                     <h1 class="text-2xl font-semibold mt-2">Our Progress</h1>
                     <p class="font-light">Random text about the progress of Palo Alto Pantry: <br> "Palo Alto Pantry has provided food to over 100 people in need." </p>
                 </div>
-                <div class="text-center border-black border-2 bg-slate-400" id="ourTeam">
+                <div class="text-center border-black border-2 bg-slate-400 h-fit lg:h-auto" id="ourTeam">
                     <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
-                    <div class="grid grid-cols-3 place-items-center mt-10">
+                    <div class="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 place-items-center mt-10">
                         <div>
                             <button id="miloButton">
                                 <img class="rounded-full w-60" src="images/miloSmiling.webp" alt="">
@@ -74,9 +74,12 @@
             </div>
         </div>
 
-        <div id="miloModal" class= "border-black border-8 fixed bg-white"></div>
+        <div id="miloModal" class= "border-black border-8 fixed bg-white">
+
+        </div>
 
         <script src="custom.js"></script>
+        <script src="index.js"></script>
     </body> 
 </html>
 

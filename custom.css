@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 body {
-    font-family: 'Montsererat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% of the viewport height */
 }
 #ourTeam {
     grid-column-start: 1;
@@ -37,6 +40,7 @@ body {
 }
 #mainContent {
     background-color: white;
+    flex: 1;
 }
 .dimmed {
     filter: brightness(70%);
@@ -60,20 +64,7 @@ body {
         opacity: 1;
     }
 }
-#navbar{
-    height: 6.5%; /* Default height in percentage */
-    transition: all 0.3s ease; /* Smooth transition for size changes */
-}
-
-#title{
-    transition: all 0.3s ease;
-}
-
-#home{
-    transition: all 0.3s ease;
-}
-
-#donate{
+.navbarElement{
     transition: all 0.3s ease;
 }
 /* page transition */
@@ -84,4 +75,7 @@ html.is-changing .transition-fade {
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade {
 opacity: 0;
+}
+footer {
+    margin-top: auto;
 }
