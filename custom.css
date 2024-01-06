@@ -24,7 +24,23 @@ body {
         overflow-y: auto;
     }
 }
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
+    #ourTeam {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .modal {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+        height: 70vh;
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) {  
     #ourTeam {
         grid-column-start: 1;
         grid-column-end: 3;
