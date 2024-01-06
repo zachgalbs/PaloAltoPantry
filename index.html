@@ -25,58 +25,81 @@
                     <img class="w-80 mt-10" src="images/paloaltopantrylogo.png" alt="">
                 </div>
                 <div class="flex justify-center mt-2 text-gray-200">
-                    <h3 class="text-3xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
+                    <h3 class="text-xl lg:text-3xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
                 </div>
                 <div class="flex justify-center mt-20">
                     <button class="w-60 h-12 bg-white rounded" id="tellMeMoreButton">Tell me more</button>
                 </div>
             </div>
-            <div class="" id="tellMeMoreTarget">
+            <div id="tellMeMoreTarget">
                 <div class="flex justify-center">
                     <h1 class="text-5xl mt-16 font-extrabold">About Us</h1>
                 </div>
-            <div class="grid grid-cols-2 grid-rows-3 gap-4 m-5 mt-10" id="aboutUsContainer">
-                <div class="text-center border-black border-2 bg-slate-500">
-                    <h1 class="text-base lg:text-2xl font-semibold mt-2">Our Mission</h1>
-                    <p class="font-light">Random text about the goal of Palo Alto Pantry: <br> "Our mission is to provide more people in need with necessary food." </p>
-                </div>
-                <div class="text-center border-black border-2 bg-slate-500">
-                    <h1 class="text-2xl font-semibold mt-2">Our Progress</h1>
-                    <p class="font-light">Random text about the progress of Palo Alto Pantry: <br> "Palo Alto Pantry has provided food to over 100 people in need." </p>
-                </div>
-                <div class="text-center border-black border-2 bg-slate-400 h-fit lg:h-auto" id="ourTeam">
-                    <h1 class="text-2xl font-semibold mt-2">Our Team</h1>
-                    <div class="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 place-items-center mt-10">
-                        <div>
-                            <button id="miloButton">
-                                <img class="rounded-full w-60" src="images/miloSmiling.webp" alt="">
-                                <p class="mt-5">Milo Sabina</p>
-                            </button>
+                <div class="grid grid-cols-2 grid-rows-3 lg:grid-rows-2 gap-4 m-5 mt-10" id="aboutUsContainer">
+                    <div class="text-center border-black border-2 bg-slate-500">
+                        <h1 class="lg:text-3xl font-semibold mt-2">Our Mission</h1>
+                        <!-- Text for large screens -->
+                        <p class="hidden lg:block font-light lg:text-2xl p-10 pt-2">Our organization is dedicated to combating hunger by providing essential food support to those in need. We focus on collecting and distributing nutritious food to underprivileged individuals and families, ensuring no one in our community suffers from food scarcity. Beyond distribution, we emphasize education and empowerment to foster sustainable food security. Through collaborations with local entities and volunteers, we address immediate needs while building a foundation for lasting food resilience, all guided by the belief that access to food is a fundamental human right.</p>
+                        <!-- Text for small screens -->
+                        <p class="block lg:hidden font-light lg:text-2xl">Our mission is to alleviate hunger by providing essential food aid to underprivileged communities, ensuring no one faces the hardship of food scarcity. Through partnerships and a commitment to sustainable solutions, we uphold the belief that access to food is a fundamental human right.</p>
+                    </div>
+                    <div class="text-center border-black border-2 bg-slate-500">
+                        <h1 class="lg:text-3xl font-semibold mt-2">Our Progress</h1>
+                        <!-- Text for large screens -->
+                        <p class="hidden lg:block font-light lg:text-2xl p-10 pt-2">Our organization has made significant strides in its fight against hunger, reaching numerous milestones in our journey. Through our dedicated efforts, we've successfully distributed meals to those in need and have seen a growing number of individuals and families gain access to reliable food sources. Our educational programs have empowered communities with the knowledge and skills to sustain their nutritional needs. The support from our local partners and the unwavering commitment of our volunteers have been pivotal in enhancing our reach and impact, solidifying our role as a catalyst for change and a pillar of hope in our community.</p>
+                        <!-- Text for small screens -->
+                        <p class="block lg:hidden font-light lg:text-2xl">We've made significant progress in our mission, successfully distributing thousands of meals and empowering communities through education and partnerships. Our efforts have established a stronger foundation for food security, marking us as a key contributor to positive change in our community.</p>                        
+                    </div>
+                    <div class="text-center border-black border-2 bg-slate-400 h-fit pb-10" id="ourTeam">
+                        <h1 class="text-3xl font-semibold mt-2">Our Team</h1>
+                        <div class="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 place-items-center mt-10">
+                            <div>
+                                <button id="miloButton">
+                                    <div class="relative w-72 h-72 flex justify-center items-center">
+                                        <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/miloSmiling.webp" alt="">
+                                    </div>                                    
+                                    <p class="mt-5 font-bold text-xl">Milo Sabina</p>
+                                    <h3 class="text-gray-600"><i>Project Founder</i></h3>
+                                </button>
+                                
+                            </div>
                             
-                        </div>
-                        
-                        <div>
-                            <button id="oliverButton">
-                                <img class="rounded-full w-60" src="images/oliverLacrosse.webp" alt="">
-                                <p class="mt-5">Oliver Chancellor</p>
-                            </button>
-                        </div>
-                        <div>
-                            <button id="christianButton">
-                                <img class="rounded-full w-60" src="images/christianLacrosse.webp" alt="">
-                                <p class="mt-5">Christian Saleh</p>
-                            </button>
+                            <div>
+                                <button id="oliverButton">
+                                    <div class="relative w-72 h-72 flex justify-center items-center">
+                                        <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/oliverLacrosse.webp" alt="">
+                                    </div>     
+                                    <p class="mt-5 font-bold text-xl">Oliver Chancellor</p>
+                                    <h3 class="text-gray-600"><i>Project Lead</i></h3>
+                                </button>
+                            </div>
+                            <div>
+                                <button id="christianButton">
+                                    <div class="relative w-72 h-72 flex justify-center items-center">
+                                        <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/christianLacrosse.webp" alt="">
+                                    </div>     
+                                    <p class="mt-5 font-bold text-xl">Christian Saleh</p>
+                                    <h3 class="text-gray-600"><i>Lead Manager</i></h3>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
+                <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Zachary Galbraith and Aditya Hiremath</footer>
             </div>
         </div>
 
-        <div id="miloModal" class= "border-black border-8 fixed bg-white">
-
+        <div id="miloModal" class="border-black border-4 fixed bg-white flex">
+            <img src="images/miloLacrosse2.webp" class="w-96 h-auto object-cover">
+            <div class="flex flex-col text-center ml-4 border w-full">
+                <h1 class="text-center text-2xl font-bold mt-4">Milo Sabina</h1>
+                <h6 class="text-center text-gray-400 mt-2"><i>The Planner</i></h6>
+                <p class="mt-10 p-10">
+                    
+Milo Sabina, a junior at our local high school, stands out as a beacon of ambition and drive. Actively involved in community service and school clubs, he leads initiatives for environmental sustainability and educational outreach. Despite a demanding academic schedule, Milo's dedication to making a positive community impact shines through. His leadership and compassion make him an inspiring example of the powerful role youth can play in shaping a better future.</p>
+            </div>
         </div>
+               
 
         <script src="custom.js"></script>
         <script src="index.js"></script>

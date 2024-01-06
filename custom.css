@@ -2,18 +2,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* 100% of the viewport height */
 }
 #ourTeam {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-}
-#aboutUsContainer {
-    height: 80vh;
 }
 #paloAltoPantryNavText {
     padding-right: 50vw;

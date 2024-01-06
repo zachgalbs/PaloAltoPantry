@@ -31,7 +31,7 @@ window.onclick = function(event) {
 
 function toggleModal(modal) {
     if (modal.style.display === "none" || modal.style.display === "") {
-        modal.style.display = "block";
+        modal.style.display = "flex";
         document.body.classList.add("no-scroll");
         mainContent.classList.add('dimmed');
         modal.classList.add("animateModal");
