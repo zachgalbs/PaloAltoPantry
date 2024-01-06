@@ -29,10 +29,32 @@ christianButton.onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target === miloModal || event.target === oliverModal) {
-        toggleModal(event.target);
+    // Get the modal elements by their IDs
+    var miloModal = document.getElementById('miloModal');
+    var oliverModal = document.getElementById('oliverModal');
+    var christianModal = document.getElementById('christianModal');
+
+    // Check if the clicked area is outside of any of the modals
+    console.log(event.target);
+    if (event.target === miloModal || event.target === oliverModal || event.target === christianModal) {
+        // Close any modal that is currently open
+        if (miloModal.classList.contains('active')) {
+            toggleModal(miloModal);
+        }
+        if (oliverModal.classList.contains('active')) {
+            toggleModal(oliverModal);
+        }
+        if (christianModal.classList.contains('active')) {
+            toggleModal(christianModal);
+        }
     }
 }
+
+function toggleModal(modal) {
+    // Toggle the 'active' class to show/hide the modal
+    modal.classList.toggle('active');
+}
+
 
 function toggleModal(modal) {
     if (modal.style.display === "none" || modal.style.display === "") {
