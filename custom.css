@@ -11,16 +11,17 @@ body {
         grid-row-start: 2;
     }
     #ourTeam {
-        color: red;
         grid-row-start: 3;
-        grid-row-end: 5;
+        grid-row-end: 7;
     }
 }
-#ourTeam {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+@media only screen and (min-width: 768px) {  
+    #ourTeam {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
 }
 #paloAltoPantryNavText {
     padding-right: 50vw;
@@ -31,9 +32,8 @@ body {
     transform: translate(-50%, -50%);
     width: 70vw;
     height: 70vh;
-    /* Hide the modal initially */
     display: none;
-}
+} 
 .animateModal {
     animation: modalTransition 1s;
 }
