@@ -67,7 +67,7 @@
                                         <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/miloSmiling.webp" alt="">
                                     </div>                                    
                                     <p class="mt-5 font-bold text-xl">Milo Sabina</p>
-                                    <h3 class="text-gray-600"><i>Project Founder</i></h3>
+                                    <h3 class="text-gray-200"><i>Project Founder</i></h3>
                                 </button>
                                 
                             </div>
@@ -78,7 +78,7 @@
                                         <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/oliverLacrosse.webp" alt="">
                                     </div>     
                                     <p class="mt-5 font-bold text-xl">Oliver Chancellor</p>
-                                    <h3 class="text-gray-600"><i>Project Lead / Cofounder</i></h3>
+                                    <h3 class="text-gray-200"><i>Project Lead / Cofounder</i></h3>
                                 </button>
                             </div>
                             <div>
@@ -87,7 +87,7 @@
                                         <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/christianLacrosse.webp" alt="">
                                     </div>     
                                     <p class="mt-5 font-bold text-xl">Christian Saleh</p>
-                                    <h3 class="text-gray-600"><i>Lead Manager / Cofounder</i></h3>
+                                    <h3 class="text-gray-200"><i>Lead Manager / Cofounder</i></h3>
                                 </button>
                             </div>
                         </div>
@@ -99,7 +99,10 @@
 
         <div id="miloModal" class="border-black border-4 fixed bg-white flex flex-col lg:flex-row md:flex-row modal">
             <img src="images/miloLacrosse2.webp" class="w-full md:max-w-96 lg:w-96 h-auto object-cover">
-            <div class="flex flex-col text-center p-4 min-w-full">
+            <button id="closeMiloModal" class="absolute top-2 right-2 text-black bg-white border border-black px-3 py-1 rounded-3xl hover:bg-gray-100 focus:outline-none text-4xl">
+                &times;
+            </button>
+            <div class="flex flex-col text-center p-4 w-full">
                 <h1 class="text-center text-2xl font-bold mt-4">Milo Sabina</h1>
                 <h6 class="text-center text-gray-400 mt-2 mb-2"><i>The Leader</i></h6>
                 <p class="lg:p-6 lg:text-lg md:p-5 md:pt-0 lg:h-max">Milo Sabina, a junior at our local high school, stands out as a beacon of ambition and drive. Actively involved in community service and school clubs, he leads iniatives for environmental sustainability and educational outreach. Despite a demanding academic schedule, Milo's dedication to making a positive community impact shines through. His leadership and compassion make him an inspiring example of the powerful role youth can play in shaping a better future.</p>
@@ -107,6 +110,9 @@
         </div>
         <div id="oliverModal" class="border-black border-4 fixed bg-white flex modal">
             <img src="images/youngOliverPhoto.jpeg" class="w-96 h-auto object-cover">
+            <button id="closeOliverModal" class="absolute top-2 right-2 text-black bg-white border border-black px-3 py-1 rounded-3xl hover:bg-gray-100 focus:outline-none text-4xl">
+                &times;
+            </button>
             <div class="flex flex-col text-center ml-4 w-full">
                 <h1 class="text-center text-2xl font-bold mt-4">Oliver Chancellor</h1>
                 <h6 class="text-center text-gray-400 mt-2"><i>The Strategist</i></h6>
@@ -114,6 +120,9 @@
             </div>
         </div>
         <div id="christianModal" class="border-black border-4 fixed bg-white flex modal">
+            <button id="closeChristianModal" class="absolute top-2 right-2 text-black bg-white border border-black px-3 py-1 rounded-3xl hover:bg-gray-100 focus:outline-none text-4xl">
+                &times;
+            </button>
             <img src="images/youngChristian.png" class="w-auto h-full object-cover">
             <div class="flex flex-col text-center ml-4 w-full">
                 <h1 class="text-center text-2xl font-bold mt-4">Christian Saleh</h1>

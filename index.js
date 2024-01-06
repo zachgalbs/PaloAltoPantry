@@ -16,39 +16,49 @@ let miloModal = document.getElementById("miloModal");
 let oliverModal = document.getElementById("oliverModal");
 let christianModal = document.getElementById("christianModal");
 let mainContent = document.getElementById("mainContent");
+let closeMiloModal = document.getElementById("closeMiloModal");
+let closeOliverModal = document.getElementById("closeOliverModal");
+let closeChristianModal = document.getElementById("closeChristianModal");
 
 miloButton.onclick = function() {
     toggleModal(miloModal);
 }
-
+closeMiloModal.onclick = function() {
+    toggleModal(miloModal);
+}
 oliverButton.onclick = function() {
+    toggleModal(oliverModal);
+}
+closeOliverModal.onclick = function() {
     toggleModal(oliverModal);
 }
 christianButton.onclick = function() {
     toggleModal(christianModal);
 }
+closeChristianModal.onclick = function() {
+    toggleModal(christianModal);
+}
 
 window.onclick = function(event) {
-    // Get the modal elements by their IDs
-    var miloModal = document.getElementById('miloModal');
-    var oliverModal = document.getElementById('oliverModal');
-    var christianModal = document.getElementById('christianModal');
+    // Close miloModal if it's active and the click is outside its content
+    console.log(!miloModal.contains(event.target));
+    console.log(miloModal.style.display);
+    console.log("toggle Modal " + !miloModal.contains(event.target) && miloModal.style.display === "block")
+    if (outsideModalClicked(miloModal, miloButton, event)) {
+        toggleModal(miloModal);
+    }
 
-    // Check if the clicked area is outside of any of the modals
-    console.log(event.target);
-    if (event.target === miloModal || event.target === oliverModal || event.target === christianModal) {
-        // Close any modal that is currently open
-        if (miloModal.classList.contains('active')) {
-            toggleModal(miloModal);
-        }
-        if (oliverModal.classList.contains('active')) {
-            toggleModal(oliverModal);
-        }
-        if (christianModal.classList.contains('active')) {
-            toggleModal(christianModal);
-        }
+    // Close oliverModal if it's active and the click is outside its content
+    if (outsideModalClicked(oliverModal, oliverButton, event)) {
+        toggleModal(oliverModal);
+    }
+
+    // Close christianModal if it's active and the click is outside its content
+    if (outsideModalClicked(christianModal, christianButton, event)) {
+        toggleModal(christianModal);
     }
 }
+
 
 function toggleModal(modal) {
     // Toggle the 'active' class to show/hide the modal
@@ -67,6 +77,11 @@ function toggleModal(modal) {
         document.body.classList.remove("no-scroll");
         mainContent.classList.remove('dimmed');
         modal.classList.remove('animateModal');
+    }
+}
+function outsideModalClicked(modal, button, event) {
+    if (!modal.contains(event.target) && !button.contains(event.target) && (modal.style.display === "flex")) {
+        return(true);
     }
 }
 
