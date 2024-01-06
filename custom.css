@@ -3,6 +3,19 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+@media only screen and (max-width: 600px) {  
+    #ourMissionDiv {
+        grid-row-start: 1;
+    }
+    #ourProgressDiv {
+        grid-row-start: 2;
+    }
+    #ourTeam {
+        color: red;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+}
 #ourTeam {
     grid-column-start: 1;
     grid-column-end: 3;
