@@ -769,6 +769,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -902,6 +906,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-60 {
@@ -2767,6 +2775,10 @@ video {
 
   .lg\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:block {

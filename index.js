@@ -11,8 +11,10 @@ document.getElementById("tellMeMoreButton").addEventListener('click', function()
 
 let miloButton = document.getElementById("miloButton");
 let oliverButton = document.getElementById("oliverButton");
+let christianButton = document.getElementById("christianButton");
 let miloModal = document.getElementById("miloModal");
 let oliverModal = document.getElementById("oliverModal");
+let christianModal = document.getElementById("christianModal");
 let mainContent = document.getElementById("mainContent");
 
 miloButton.onclick = function() {
@@ -21,6 +23,9 @@ miloButton.onclick = function() {
 
 oliverButton.onclick = function() {
     toggleModal(oliverModal);
+}
+christianButton.onclick = function() {
+    toggleModal(christianModal);
 }
 
 window.onclick = function(event) {

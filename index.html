@@ -40,7 +40,7 @@
                         <h1 class="text-xl lg:text-3xl font-semibold mt-2">Our Mission</h1>
                         <!-- This is the line separator -->
                         <div class="flex justify-center">
-                            <div class="w-20 h-1 bg-black mt-3 "></div>
+                            <div class="w-20 h-1 bg-black mt-3 mb-2 lg:mb-0"></div>
                         </div>
                         <!-- Text for large screens -->
                         <p class="hidden lg:block font-light lg:text-2xl p-10 pt-2">Our organization is dedicated to combating hunger by providing essential food support to those in need. We focus on collecting and distributing nutritious food to underprivileged individuals and families, ensuring no one in our community suffers from food scarcity. Beyond distribution, we emphasize education and empowerment to foster sustainable food security. Through collaborations with local entities and volunteers, we address immediate needs while building a foundation for lasting food resilience, all guided by the belief that access to food is a fundamental human right.</p>
@@ -51,12 +51,12 @@
                         <h1 class="text-xl lg:text-3xl font-semibold mt-2">Our Progress</h1>
                         <!-- This is the line separator -->
                         <div class="flex justify-center">
-                            <div class="w-20 h-1 bg-black mt-3 "></div>
+                            <div class="w-20 h-1 bg-black mt-3 mb-2 lg:mb-0"></div>
                         </div>
                         <!-- Text for large screens -->
                         <p class="hidden lg:block font-light lg:text-2xl p-10 pt-2">Our organization has made significant strides in its fight against hunger, reaching numerous milestones in our journey. Through our dedicated efforts, we've successfully distributed meals to those in need and have seen a growing number of individuals and families gain access to reliable food sources. Our educational programs have empowered communities with the knowledge and skills to sustain their nutritional needs. The support from our local partners and the unwavering commitment of our volunteers have been pivotal in enhancing our reach and impact, solidifying our role as a catalyst for change and a pillar of hope in our community.</p>
                         <!-- Text for small screens -->
-                        <p class="block lg:hidden font-light text-lg">We've made significant progress in our mission, successfully distributing thousands of meals and empowering communities through education and partnerships. Our efforts have established a stronger foundation for food security, marking us as a key contributor to positive change in our community.</p>                        
+                        <p class="block lg:hidden font-light text-lg">We've made significant progress in our mission, successfully distributing meals and empowering communities through education and partnerships. Our efforts have established a stronger foundation for food security, marking us as a key contributor to positive change in our community.</p>                        
                     </div>
                     <div class="text-center bg-slate-400 pb-10 border-black border-2" id="ourTeam">
                         <h1 class="text-2xl lg:text-3xl font-semibold mt-2">Our Team</h1>
@@ -78,7 +78,7 @@
                                         <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/oliverLacrosse.webp" alt="">
                                     </div>     
                                     <p class="mt-5 font-bold text-xl">Oliver Chancellor</p>
-                                    <h3 class="text-gray-600"><i>Project Lead</i></h3>
+                                    <h3 class="text-gray-600"><i>Project Lead / Cofounder</i></h3>
                                 </button>
                             </div>
                             <div>
@@ -87,7 +87,7 @@
                                         <img class="absolute w-60 h-60 object-cover rounded-full transition-all duration-300 ease-in-out hover:w-72 hover:h-72" src="images/christianLacrosse.webp" alt="">
                                     </div>     
                                     <p class="mt-5 font-bold text-xl">Christian Saleh</p>
-                                    <h3 class="text-gray-600"><i>Lead Manager</i></h3>
+                                    <h3 class="text-gray-600"><i>Lead Manager / Cofounder</i></h3>
                                 </button>
                             </div>
                         </div>
@@ -97,17 +97,30 @@
             </div>
         </div>
 
-        <div id="miloModal" class="border-black border-4 fixed bg-white flex">
+        <div id="miloModal" class="border-black border-4 fixed bg-white flex modal">
             <img src="images/miloLacrosse2.webp" class="w-96 h-auto object-cover">
-            <div class="flex flex-col text-center ml-4 border w-full">
+            <div class="flex flex-col text-center ml-4 w-full">
                 <h1 class="text-center text-2xl font-bold mt-4">Milo Sabina</h1>
-                <h6 class="text-center text-gray-400 mt-2"><i>The Planner</i></h6>
-                <p class="mt-10 p-10">
-                    
-Milo Sabina, a junior at our local high school, stands out as a beacon of ambition and drive. Actively involved in community service and school clubs, he leads initiatives for environmental sustainability and educational outreach. Despite a demanding academic schedule, Milo's dedication to making a positive community impact shines through. His leadership and compassion make him an inspiring example of the powerful role youth can play in shaping a better future.</p>
+                <h6 class="text-center text-gray-400 mt-2"><i>The Leader</i></h6>
+                <p class="mt-10 p-10">Milo Sabina, a junior at our local high school, stands out as a beacon of ambition and drive. Actively involved in community service and school clubs, he leads initiatives for environmental sustainability and educational outreach. Despite a demanding academic schedule, Milo's dedication to making a positive community impact shines through. His leadership and compassion make him an inspiring example of the powerful role youth can play in shaping a better future.</p>
             </div>
         </div>
-               
+        <div id="oliverModal" class="border-black border-4 fixed bg-white flex modal">
+            <img src="images/youngOliverPhoto.jpeg" class="w-96 h-auto object-cover">
+            <div class="flex flex-col text-center ml-4 w-full">
+                <h1 class="text-center text-2xl font-bold mt-4">Oliver Chancellor</h1>
+                <h6 class="text-center text-gray-400 mt-2"><i>The Strategist</i></h6>
+                <p class="mt-10 p-10">Oliver Chancellor, a Junior at a local high school, is a shining example of young leadership. As the project lead of a non-profit organization, he expertly balances academic responsibilities with his role in spearheading community initiatives. Under his guidance, the non-profit has flourished, impacting many lives positively. Oliver's remarkable strategic skills and commitment to service highlight his potential as a future leader and change-maker.</p>
+            </div>
+        </div>
+        <div id="christianModal" class="border-black border-4 fixed bg-white flex modal">
+            <img src="images/youngChristian.png" class="w-auto h-full object-cover">
+            <div class="flex flex-col text-center ml-4 w-full">
+                <h1 class="text-center text-2xl font-bold mt-4">Christian Saleh</h1>
+                <h6 class="text-center text-gray-400 mt-2"><i>The Architect</i></h6>
+                <p class="mt-10 p-10">Christian Saleh, a Junior at his local high school, is rapidly gaining recognition for his exceptional management skills and his remarkable ability to listen effectively. Balancing academic responsibilities with various extracurricular roles, Christian has demonstrated a natural flair for leadership, particularly in coordinating team projects and collaborative efforts. His peers and teachers alike commend his empathetic and attentive listening style, which not only fosters an inclusive environment but also allows for more nuanced and effective decision-making. Christian’s ability to understand diverse perspectives and integrate them into cohesive action plans marks him as a respected and valued member of his school community. His knack for management, coupled with his listening skills, poise him as a promising leader of the future.</p>
+            </div>
+        </div> 
 
         <script src="custom.js"></script>
         <script src="index.js"></script>
