@@ -83,4 +83,4 @@ function outsideModalClicked(modal, button, event) {
 }
 
 // animate the navbar with the elements from the home page
-setupNavbar("navbar", "navbarTitle", "navbarHome", "navbarDonate");
+setupNavbar("navbar", "navbarTitle", "navbarHome", "navbarDonate", "navbarContact");
