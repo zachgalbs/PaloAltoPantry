@@ -56,31 +56,5 @@ window.onclick = function(event) {
     }
 }
 
-
-function toggleModal(modal) {
-    // Toggle the 'active' class to show/hide the modal
-    modal.classList.toggle('active');
-}
-
-
-function toggleModal(modal) {
-    if (modal.style.display === "none" || modal.style.display === "") {
-        modal.style.display = "flex";
-        document.body.classList.add("no-scroll");
-        mainContent.classList.add('dimmed');
-        modal.classList.add("animateModal");
-    } else {
-        modal.style.display = "none";        
-        document.body.classList.remove("no-scroll");
-        mainContent.classList.remove('dimmed');
-        modal.classList.remove('animateModal');
-    }
-}
-function outsideModalClicked(modal, button, event) {
-    if (!modal.contains(event.target) && !button.contains(event.target) && (modal.style.display === "flex")) {
-        return(true);
-    }
-}
-
 // animate the navbar with the elements from the home page
 setupNavbar("navbar", "navbarTitle", "navbarHome", "navbarDonate", "navbarContact");

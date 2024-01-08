@@ -11,71 +11,90 @@
     </head>
 
     <body class="bg-gray-100">
-        <div id="donateNavbar" class="z-10 items-center navbarElement flex w-screen fixed top-0 whitespace-nowrap justify-end bg-neutral-700 h-16 lg:h-14 pl-5 pr-5 lg:pl-20 lg:pr-20 text-white font-thin">
+        <div id="mainContent">
+            <div id="donateNavbar" class="z-10 items-center navbarElement flex w-screen fixed top-0 whitespace-nowrap justify-end bg-neutral-700 h-16 lg:h-14 pl-5 pr-5 lg:pl-20 lg:pr-20 text-white font-thin">
 
-            <h1 id="donateNavbarTitle" class="navbarElement text-xl lg:text-3xl overflow-hidden lg:ml-10 w-screen font-bold">Palo Alto Pantry</h1>
-        
-            <a id="donateNavbarHome" class="navbarElement text-center text-base lg:text-xl pr-6 opacity-70 hover:animate-pulse" href="index.html">Home</a>
-        
-            <a id="donateNavbarDonate" class="navbarElement text-center text-base lg:text-xl" href="donate.html">Donate</a>
-
-            <a id="donateNavbarContact" class="navbarElement pl-6 text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse" href="contact.html">Contact Us</a>
-        </div>
-
-        <div class="bg-gray-800 h-screen">
-
-            <div class="flex justify-center">
-                <h1 class="text-6xl mt-40 text-white">Get Involved</h1>
-            </div>
-
-            <div class="flex justify-center mt-5 mb-20 text-white font-bold">
-                <p class="text-xl">Feed Hope. Feed those in need.</p>
-            </div>
-
-            <div class="flex justify-center mt-5 h-20">
-                <p class="max-w-screen-md min-w-96 m-10 text-white text-justify text-xl">
-                    
-On our dedicated journey to combat hunger, we at Palo Alto Pantry are committed to empowering underprivileged communities by providing sustainable access to nutritious food. Our mission is not just about alleviating immediate hunger but also about fostering long-term food security and self-sufficiency. Through community-driven initiatives, educational programs, and partnerships, we aim to create a world where access to healthy food is a right, not a privilege. Join us in this noble cause and be a part of a movement that not only feeds bodies but also nourishes hope and builds stronger, more resilient communities.
-                </p>    
-
-            </div>
-
-        </div>
-
-        <div class="flex justify-center m-20">
+                <h1 id="donateNavbarTitle" class="navbarElement text-xl lg:text-3xl overflow-hidden lg:ml-10 w-screen font-bold">Palo Alto Pantry</h1>
             
-            <div class="grid col-span-1 border-s-blue-14000">
+                <a id="donateNavbarHome" class="navbarElement hideHamburger text-center text-base lg:text-xl pr-6 opacity-70 hover:animate-pulse" href="index.html">Home</a>
+            
+                <a id="donateNavbarDonate" class="navbarElement hideHamburger text-center text-base lg:text-xl" href="donate.html">Donate</a>
+
+                <a id="donateNavbarContact" class="navbarElement hideHamburger pl-6 text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse" href="contact.html">Contact Us</a>
+                <div id="hamburger" class="lg:hidden md:hidden flex flex-col justify-center items-center space-y-2">
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                </div>     
+                <div id="navPopup" class="hidden">
+                    <a href="index.html">Home</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </div> 
+            </div>
+
+            <div class="bg-gray-800 getInvolvedContainer">
 
                 <div class="flex justify-center">
+                    <h1 class="text-6xl mt-40 text-white">Get Involved</h1>
+                </div>
+
+                <div class="flex justify-center mt-5 mb-10 text-white font-bold">
+                    <p class="text-xl">Feed Hope. Feed those in need.</p>
+                </div>
+                <div class="flex justify-center mb-20">
+                    <button id="whyDonateButton" class="w-60 h-12 bg-white rounded" id="tellMeMoreButton">Why should I donate?</button>
+                </div>
+
+                <div class="flex justify-center mt-5 h-20">
+
+                </div>
+
+            </div>
+
+            <div class="flex justify-center m-8">
                 
-                    <h1 class="text-5xl mt-20">Donate</h1>
+                <div class="grid col-span-1 border-s-blue-14000">
 
-                </div>
-
-
-                <div class="flex justify-center mt-4">
-
-                    <p class="font-bold">Make a difference. Donate now.</p>
-
-                </div>
-
-                <div class="flex justify-center mt-10">
-
-                    <div class="shadow-2xl shadow-black rounded-lg hover:opacity-70 active:opacity-40">
-
-                        <a href="https://buy.stripe.com/test_cN215O91IbqZ6as7ss" class="flex bg-black text-white w-80 h-12 justify-center items-center rounded-lg shadow-2xl">
-
-                            Donate Now
-
-                        </a>
+                    <div class="flex justify-center">
+                    
+                        <h1 class="text-5xl mt-10">Donate</h1>
 
                     </div>
 
+
+                    <div class="flex justify-center mt-4">
+
+                        <p class="font-bold">Make a difference. Donate now.</p>
+
+                    </div>
+
+                    <div class="flex justify-center mt-10">
+
+                        <div class="shadow-2xl shadow-black rounded-lg hover:opacity-70 active:opacity-40">
+
+                            <a href="https://buy.stripe.com/test_cN215O91IbqZ6as7ss" class="flex bg-black text-white w-80 h-12 justify-center items-center rounded-lg shadow-2xl">
+
+                                Donate Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
+            <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Aditya Hiremath</footer>
         </div>
-        <footer class="flex justify-end mr-2 text-xs">Made with ❤️ by Aditya Hiremath</footer>
+        <div id="donateModal" class="border-black border-4 fixed bg-white flex lg:flex-row md:flex-row modal">
+            <p class="max-w-screen-md m-5 text-black text-justify text-lg lg:text-xl ">
+                Help Palo Alto Pantry in our fight against hunger. Your donation can provide sustainable, nutritious food to those in need, fostering long-term food security. Join us in our mission to ensure that healthy food is a right for everyone, building hopeful and resilient communities. Support us today and make a difference!
+            </p>    
+            <button id="closeDonateModal" class="absolute top-2 right-2 text-black bg-white border border-black px-2 py-px rounded-full hover:bg-gray-100 focus:outline-none text-4xl">
+                <div style="margin-left: 2px; margin-right: 2px;">&times;</div>
+            </button>
 
+        </div>
 
         <script src="custom.js"></script>
         <script src="donate.js"></script>

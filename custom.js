@@ -33,3 +33,44 @@ function setupNavbar(navbarId, titleId, homeId, donateId, contactId) {
         }
     });
 }
+
+function toggleModal(modal) {
+    if (modal.style.display === "none" || modal.style.display === "") {
+        modal.style.display = "flex";
+        document.body.classList.add("no-scroll");
+        mainContent.classList.add('dimmed');
+        modal.classList.add("animateModal");
+    } else {
+        modal.style.display = "none";        
+        document.body.classList.remove("no-scroll");
+        mainContent.classList.remove('dimmed');
+        modal.classList.remove('animateModal');
+    }
+}
+
+function outsideModalClicked(modal, button, event) {
+    if (!modal.contains(event.target) && !button.contains(event.target) && (modal.style.display === "flex")) {
+        return(true);
+    }
+}
+
+const hamburger = document.getElementById('hamburger');
+hamburger.addEventListener('click', function() {
+    console.log("brah");
+    this.classList.toggle('active');
+    const navPopup = document.getElementById('navPopup');
+    navPopup.classList.toggle('hidden');
+    console.log(navPopup.classList.contains('hidden'));
+});
+window.onclick = function(event) {
+    if (!event.target.matches('.hamburger-icon, .hamburger-icon *')) {
+        var dropdowns = document.getElementsByClassName("hidden");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains('hidden')) {
+                openDropdown.classList.add('hidden');
+            }
+        }
+    }
+};

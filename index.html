@@ -14,20 +14,30 @@
 
                 <h1 id="navbarTitle" class="navbarElement text-xl lg:text-3xl md:text-3xl overflow-hidden lg:ml-10 md:ml-10 w-screen font-bold">Palo Alto Pantry</h1>
                
-                <a id="navbarHome" class="navbarElement text-center text-base lg:text-xl md:text-xl" href="index.html">Home</a>
+                <a id="navbarHome" class="navbarElement hideHamburger text-center text-base lg:text-xl md:text-xl" href="index.html">Home</a>
                
-                <a id="navbarDonate" class="navbarElement text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse pl-6" href="donate.html">Donate</a>
+                <a id="navbarDonate" class="navbarElement hideHamburger text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse pl-6" href="donate.html">Donate</a>
 
-                <a id="navbarContact" class="navbarElement pl-6 text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse" href="contact.html">Contact Us</a>
-
+                <a id="navbarContact" class="navbarElement hideHamburger pl-6 text-center text-base lg:text-xl md:text-xl opacity-70 hover:animate-pulse" href="contact.html">Contact Us</a>
+                
+                <div id="hamburger" class="lg:hidden md:hidden flex flex-col justify-center items-center space-y-2">
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                    <span class="block h-0.5 w-8 bg-white"></span>
+                </div>     
+                <div id="navPopup" class="hidden">
+                    <a href="index.html">Home</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>           
             </div>
             
             <div class="h-screen bg-gray-800">
                 <div class="flex justify-center">
-                    <img class="w-80 mt-10" src="images/paloaltopantrylogo.png" alt="">
+                    <img class="w-40 mt-20 lg:mt-10 lg:w-80 md:w-60" src="images/paloaltopantrylogo.png" alt="">
                 </div>
                 <div class="flex justify-center mt-2 text-gray-200">
-                    <h3 class="text-xl lg:text-3xl md:text-3xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
+                    <h3 class="text-base lg:text-3xl md:text-2xl"><i>Welcome to the Palo Alto Pantry Website!</i></h3>
                 </div>
                 <div class="flex justify-center mt-20">
                     <button class="w-60 h-12 bg-white rounded" id="tellMeMoreButton">Tell me more</button>
