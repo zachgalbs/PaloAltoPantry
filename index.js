@@ -41,9 +41,6 @@ closeChristianModal.onclick = function() {
 
 window.onclick = function(event) {
     // Close miloModal if it's active and the click is outside its content
-    console.log(!miloModal.contains(event.target));
-    console.log(miloModal.style.display);
-    console.log("toggle Modal " + !miloModal.contains(event.target) && miloModal.style.display === "block")
     if (outsideModalClicked(miloModal, miloButton, event)) {
         toggleModal(miloModal);
     }
