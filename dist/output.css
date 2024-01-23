@@ -793,18 +793,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-96 {
-  margin-top: 24rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -1038,18 +1026,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-150 {
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1352,6 +1328,10 @@ video {
 
 .grid-rows-6 {
   grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2187,16 +2167,6 @@ video {
      object-fit: scale-down;
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-
 .p-10 {
   padding: 2.5rem;
 }
@@ -2479,14 +2449,14 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2940,6 +2910,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3093,20 +3067,12 @@ video {
     margin-right: auto;
   }
 
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .lg\:mt-auto {
     margin-top: auto;
-  }
-
-  .lg\:mt-12 {
-    margin-top: 3rem;
-  }
-
-  .lg\:mt-14 {
-    margin-top: 3.5rem;
   }
 
   .lg\:block {
